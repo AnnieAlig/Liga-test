@@ -1,0 +1,30 @@
+{
+  "name": "liga",
+  "version": "1.0.0",
+  "description": "test work",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnieAlig/Liga-test.git"
+  },
+  "author": "Annie Alig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnieAlig/Liga-test/issues"
+  },
+  "homepage": "https://github.com/AnnieAlig/Liga-test#readme"
+}
