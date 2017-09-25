@@ -9,14 +9,21 @@
     
 
     <link rel="stylesheet" href="css/main.min.css">
+    
 </head>
 <body>
-    <h1>Hello!</h1>
-    <section class="users" ng-controller="usersCtrl as users">
-        <h1>Hello, {{users.name}}</h1>
-    </section>
+   <header>
+       <a href="#" class="home"><img src="img/logo.png" alt="Logo" class="logo"></a>
+       <nav>
+           <ul>
+               <li><a href="#!all_ping" class="all_ping">All Penguins</a></li>
+               <li><a href="#!today_ping" class="today_ping">Penguins of the day</a></li>
+               <li><a href="#!form" class="form">Your comments</a></li>
+           </ul>
+       </nav>
+   </header>
 
-
+    <div ui-view></div>
 
     <script src="js/vendor.min.js"></script>
 

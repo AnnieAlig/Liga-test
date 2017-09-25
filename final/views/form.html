@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="column">
+        <div class="container" ng-controller="formCtrl as form">
+            <h2>Add a comment:</h2>
+            <form>
+                <label for="name">Enter your name</label> <br>
+                <input type="text" id="name" ng-model="form.data.name" placeholder="Name"><br>
+                <label for="select">What's your favourite penguins?</label><br>
+                <select ng-model="form.data.favourite" id="favourite"><br>
+                    <option value="">Choose
+                    <option value="great penguins ">Great penguins 
+                    <option value="brush-tailed penguins ">Brush-tailed penguins 
+                    <option value="little penguins ">Little penguins 
+                </select><br>
+                Your comment:<br>
+                <textarea ng-model="form.data.comment" cols="40" rows="10"></textarea><br>
+                <input type="submit" ng-click="form.add()" value="Send">
+            </form> 
+        </div>  
+    </div>
+    <div class="column">
+        <h2>Previous comments:</h2>
+        <ul ng-controller="formCtrl as formCtrl" class="comments">
+            <li ng-repeat="data in formCtrl.comments" class="comments-item">
+                <h2>{{data.name}}</h2>
+                <p>Chosed: <span>{{data.favourite}}</span></p>
+                <p>Comment: <span>"{{data.comment}}"</span></p>
+            </li>
+        </ul>  
+    </div>    

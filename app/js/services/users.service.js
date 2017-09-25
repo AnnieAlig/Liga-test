@@ -14,4 +14,3 @@ angular
     .module('liga')
     .service('UsersService', ['$http', UsersService]);
 
-// liga.service

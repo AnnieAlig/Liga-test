@@ -6,8 +6,7 @@ angular.module('liga')
         var form = {};
         formService.comments = formCtrl.comments;
         form.getComments = function(){
-            console.log(formService.comments);
-            // return comments;
+        // return comments;
         }
 
         form.addComment = function(comment){
@@ -16,4 +15,3 @@ angular.module('liga')
         
         return form;
     }
-    // console.log('scope is', formCtrl.comments);

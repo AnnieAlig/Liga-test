@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <div class="column">
+        <div ng-controller="usersCtrl as usersCtrl">
+            <h2>Here is all our {{usersCtrl.users}}</h2>
+        
+            <ul ng-controller="usersCtrl as usersCtrl">
+                <li ng-repeat="user in usersCtrl.data">
+                    {{user.name}}
+                </li>
+            </ul>
+            </div>
+    </div>
+    
+    <div class="column">
+        <h2>You can also contact our stuff for providing more delails</h2>
+        <emails></emails>  
+    </div>
+</div>

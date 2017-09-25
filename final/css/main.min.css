@@ -1,5 +1,155 @@
-h1 {
-  color: green;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button,
+input,
+optgroup,
+select,
+textarea, html input[type="button"],
+input[type="reset"],
+input[type="submit"], button[disabled],
+html input[disabled], button::-moz-focus-inner,
+input::-moz-focus-inner, input[type="checkbox"],
+input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none; }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+textarea:focus::-moz-placeholder {
+  color: transparent; }
+
+textarea:focus:-moz-placeholder {
+  color: transparent; }
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent; }
+
+header {
+  border-bottom: 2px solid #d3dbe8;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 150px;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.logo {
+  width: 100px; }
+
+nav > ul {
+  height: -webkit-calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  line-height: 100px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #abc6f2;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  nav > ul li {
+    padding: 0 50px;
+    border-right: 1px solid #d3dbe8;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    nav > ul li:first-child {
+      border-left: 1px solid #d3dbe8; }
+    nav > ul li:hover {
+      background-color: rgba(211, 219, 232, 0.2);
+      -webkit-box-shadow: 0 2px 5px #d3dbe8;
+              box-shadow: 0 2px 5px #d3dbe8;
+      color: #7bacfc; }
+    nav > ul li a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8,5 +158,68 @@ h1 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: orange;
-  border: 2px solid red; }
+  padding-top: 20px; }
+  .wrapper h1 {
+    color: #003b9b;
+    text-align: center; }
+  .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .wrapper ul li {
+      padding: 20px;
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #d3dbe8; }
+      .wrapper ul li:hover {
+        background-color: rgba(211, 219, 232, 0.2);
+        -webkit-box-shadow: 0 2px 5px #d3dbe8;
+                box-shadow: 0 2px 5px #d3dbe8; }
+  .wrapper .column {
+    width: 50%; }
+
+h1 {
+  color: #003b9b;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: bold; }
+
+h2 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold; }
+
+.container {
+  text-align: left;
+  font-size: 18px; }
+  .container form {
+    width: 320px; }
+  .container input, .container select, .container textarea {
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 20px; }
+  .container input[type="submit"] {
+    width: 200px;
+    background-color: #b9eac0;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer; }
+
+.comments .comments-item {
+  padding: 40px;
+  margin-bottom: 20px; }
+  .comments .comments-item h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold; }
+  .comments .comments-item p {
+    text-align: left;
+    margin-bottom: 10px; }
+    .comments .comments-item p span {
+      font-style: italic; }
